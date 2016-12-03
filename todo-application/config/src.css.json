@@ -1,0 +1,7 @@
+[
+  "dist/fonts/font-awesome/css/font-awesome.css",
+  "dist/css/bootstrap.css",
+  "bower_components/kendo-ui/styles/kendo.common-bootstrap.core.min.css",
+  "bower_components/kendo-ui/styles/kendo.bootstrap.min.css",
+  "dist/css/main.css"
+]

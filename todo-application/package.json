@@ -1,0 +1,26 @@
+{
+  "name": "todo-application",
+  "version": "1.0.0",
+  "description": "Todo application",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm install && bower install && grunt start"
+  },
+  "author": "Lindon Camaj",
+  "license": "ISC",
+  "dependencies": {
+    "grunt": "^1.0.1",
+    "grunt-angular-templates": "^1.1.0",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-jshint": "^1.0.0",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-uglify": "^2.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-include-source": "^1.0.0",
+    "grunt-wiredep": "^3.0.1",
+    "jit-grunt": "^0.10.0"
+  }
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title ng-bind="title"></title>
+
+    <!-- include: "type": "css", "files": "<%= appCss %>" -->
+    <link href="dist/fonts/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="dist/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="bower_components/kendo-ui/styles/kendo.common-bootstrap.core.min.css" rel="stylesheet" type="text/css">
+    <link href="bower_components/kendo-ui/styles/kendo.bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="dist/css/main.css" rel="stylesheet" type="text/css">
+    <!-- /include -->
+
+</head>
+<body>
+
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/kendo-ui/js/kendo.ui.core.min.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="bower_components/ngstorage/ngStorage.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/tv4/tv4.js"></script>
+    <script src="bower_components/objectpath/lib/ObjectPath.js"></script>
+    <script src="bower_components/angular-schema-form/dist/schema-form.js"></script>
+    <script src="bower_components/angular-schema-form/dist/bootstrap-decorator.js"></script>
+    <script src="bower_components/moment/moment.js"></script>
+    <script src="bower_components/underscore/underscore.js"></script>
+    <!-- endbower -->
+
+    <!-- include: "type": "js", "files": "<%= concat.angularApp.src %>" -->
+    <script src="bower_components/kendo-ui/js/kendo.angular.min.js"></script>
+    <script src="src/js/app/app.js"></script>
+    <script src="dist/js/templates.js"></script>
+    <script src="src/js/app/components/components.module.js"></script>
+    <script src="src/js/app/components/todo/todo.module.js"></script>
+    <script src="src/js/app/components/user/login/login.module.js"></script>
+    <script src="src/js/app/components/user/register/register.module.js"></script>
+    <script src="src/js/app/components/user/user.module.js"></script>
+    <script src="src/js/app/components/todo/todo.service.js"></script>
+    <script src="src/js/app/components/user/user.service.js"></script>
+    <script src="src/js/app/components/todo/todo.directive.js"></script>
+    <script src="src/js/app/components/todo/todo.controller.js"></script>
+    <script src="src/js/app/components/user/login/login.controller.js"></script>
+    <script src="src/js/app/components/user/register/register.controller.js"></script>
+    <script src="src/js/app/core/core.module.js"></script>
+    <script src="src/js/app/core/layout/layout.module.js"></script>
+    <script src="src/js/app/core/services/services.module.js"></script>
+    <script src="src/js/app/core/services/forms.service.js"></script>
+    <script src="src/js/app/core/services/router.service.js"></script>
+    <script src="src/js/app/core/services/util.service.js"></script>
+    <script src="src/js/app/core/layout/layout.controller.js"></script>
+    <script src="src/js/app/form-engine/form-engine.module.js"></script>
+    <script src="src/js/app/form-engine/directives/fe-combobox.directive.js"></script>
+    <script src="src/js/app/form-engine/directives/fe-date-time-picker.directive.js"></script>
+    <!-- /include -->
+
+    <div id="main" ui-view autoscroll="false" class="main-wrapper"></div>
+
+</body>
+</html>

@@ -1,0 +1,72 @@
+{
+
+    // Enforcing
+    "bitwise": true, // Prohibit bitwise operators (&, |, ^, etc.)
+    "camelcase": true, // Identifiers must be in camelCase
+    "curly": true, // Require {} for every new block or scope
+    "eqeqeq": true, // Require triple equals (===) for comparison
+    "freeze": true, // prohibits overwriting prototypes of native objects such as Array, Date etc.
+    "immed": true, //Require immediate invocations to be wrapped in parens e.g. `(function () { } ());`
+    "indent": 4,
+    "latedef": "nofunc", //Require variables/functions to be defined before being used
+    "newcap": true, //Require capitalization of all constructor functions e.g. `new F()`
+    "noarg": true, //Prohibit use of `arguments.caller` and `arguments.callee`
+    "noempty": true, //Prohibit use of empty blocks
+    "nonbsp": true, //Prohibit "non-breaking whitespace" characters.
+    "nonew": true, //Prohibit use of constructors for side-effects (without assignment)
+    "plusplus": false, //Prohibit use of `++` and `--`
+    "quotmark": false, // "single" : require single quotes // "double" : require double quotes
+    "undef": true, //Require all non-global variables to be declared (prevents global leaks)
+    "strict": true, //Requires all functions run in ES5 Strict Mode
+    "maxparams": 20, //Max number of formal params allowed per function
+    "maxdepth": 5, //Max depth of nested blocks (within functions)
+    "maxstatements": 40, //Max number statements per function
+    "maxcomplexity": 10, //Max cyclomatic complexity per function
+
+    // Relaxing
+    "asi": false, // Tolerate Automatic Semicolon Insertion (no semicolons)
+    "boss": false, //Tolerate assignments where comparisons would be expected
+    "debug": true, //Allow debugger statements e.g. browser breakpoints.
+    "eqnull": true, //Tolerate use of `== null`
+    "evil": false, //Tolerate use of `eval` and `new Function()`
+    "expr": false, // Tolerate `ExpressionStatement` as Programs
+    "funcscope": false, // Tolerate defining variables inside control statements
+    "globalstrict": false, //Allow global "use strict" (also enables 'strict')
+
+    "iterator": false, //Tolerate using the `__iterator__` property
+    "lastsemic": false, //Tolerate omitting a semicolon for the last statement of a 1-line block
+    "laxbreak": false, //Tolerate possibly unsafe line breakings
+    "laxcomma": false, //Tolerate comma-first style coding
+    "loopfunc": true, //Tolerate functions being defined in loops
+    "maxerr": false, //Maximum error before stopping
+    "moz": false, //Allow Mozilla specific syntax (extends and overrides esnext features)  // (ex: `for each`, multiple try/catch, function expression…)
+    "multistr": false, //Tolerate multi-line strings
+    "notypeof": false, //Tolerate invalid typeof operator values
+    "proto": false, // Tolerate using the `__proto__` property
+    "scripturl": false, //Tolerate script-targeted URLs
+    "shadow": false, //Allows re-define variables later in code e.g. `var x=1; x=2;`
+    "sub": true, //Tolerate using `[]` notation when it can still be expressed in dot notation
+    "supernew": false, //Tolerate `new function () { ... };` and `new Object;`
+    "validthis": true, //Tolerate using this in a non-constructor function
+
+
+    "noyield": false, // Tolerate generator functions with no yield statement in them.
+    "browser": true, // Web Browser (window, document, etc)
+    "devel": true, // Development/debugging (alert, confirm, etc)
+    "node": false, // Node.js
+    "globals": {
+        "angular": false,
+        "$": false,
+        "inject": false,
+        "module": false,
+        "window": false,
+        "document": false,
+        "PerfectScrollbar": false,
+        "MobileDetect": false,
+        "hljs": false,
+        "d3": false,
+        "moment": false,
+        "console": false,
+        "alert": false
+    }
+}

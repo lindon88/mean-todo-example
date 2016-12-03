@@ -1,0 +1,25 @@
+.register-panel {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  min-height: 560px;
+  max-height: 740px;
+  margin-top: -300px;
+  margin-left: -200px;
+  border: 1px solid #ccc;
+  background-color: #f3f3f3;
+  padding: 20px;
+
+  span{
+    font-size: 18px;
+    font-weight: 600;
+    display: block;
+    padding: 0 0 10px 0;
+  }
+
+  .btn{
+    float: right;
+  }
+  
+}

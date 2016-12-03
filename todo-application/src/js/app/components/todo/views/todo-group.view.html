@@ -1,0 +1,12 @@
+<h2>{{options.day}}</h2>
+<ul>
+    <li ng-repeat="item in options.items track by $index">
+        <a href="javascript://" class="todo-item">
+            <span class="circle {{item.priorityClass}}"></span>
+            <span ng-class="{'done': item.isComplete == 1}" class="todo-title">{{item.title}}</span>
+            <i ng-click="edit()" class="fa fa-edit" aria-hidden="true"></i>
+            <i ng-click="check()" class="fa fa-check" aria-hidden="true"></i>
+            <i ng-click="remove()" class="fa fa-remove" aria-hidden="true"></i>
+        </a>
+    </li>
+</ul>

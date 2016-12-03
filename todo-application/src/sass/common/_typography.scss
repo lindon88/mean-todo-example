@@ -1,0 +1,63 @@
+﻿@font-face {
+    font-family: 'sansa_ding_bet2regular';
+    src: url('../fonts/sansa/sansa-webfont-webfont.eot');
+    src: url('../fonts/sansa/sansa-webfont-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/sansa/sansa-webfont-webfont.woff2') format('woff2'),
+    url('../fonts/sansa/sansa-webfont-webfont.woff') format('woff'),
+    url('../fonts/sansa/sansa-webfont-webfont.ttf') format('truetype'),
+    url('../fonts/sansa/sansa-webfont-webfont.svg#sansa_ding_bet2regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.f-sansa {
+    font-family: 'sansa_ding_bet2regular';
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-transform: none;
+}
+
+
+html {
+  font-size: $font-size-root;
+}
+
+body{
+    font-family: $font-family-body;
+    @include font-size($font-size-base);
+    line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6{
+    line-height: normal;
+    font-weight: bold;
+}
+
+h1{
+    @include font-size($h1);
+}
+
+h2{
+    @include font-size($h2);
+}
+
+h3{
+    @include font-size($h3);
+}
+
+h4{
+    @include font-size($h4);
+}
+
+h5{
+    @include font-size($h5);
+}
+
+h6{
+    @include font-size($h6);
+}
+
+p{
+    margin: 15px 0;
+}

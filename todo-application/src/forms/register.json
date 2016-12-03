@@ -1,0 +1,58 @@
+{
+  "schema": {
+    "type": "object",
+    "title": "Comment",
+    "properties": {
+      "userName":  {
+        "title": "User name:",
+        "type": "string"
+      },
+      "firstName": {
+        "title": "First name:",
+        "type": "string"
+      },
+      "lastName": {
+        "title": "Last name:",
+        "type": "string"
+      },
+      "email": {
+        "title": "Email:",
+        "type": "string"
+      },
+      "password":  {
+        "title": "Password:",
+        "type": "string"
+      },
+      "confirmPassword":  {
+        "title": "Confirm password:",
+        "type": "string"
+      }
+    },
+    "required": ["userName", "firstName", "email", "password", "confirmPassword"]
+  },
+
+  "form": [
+    "userName",
+    "firstName",
+    "lastName",
+    "email",
+    {
+      "key": "password",
+      "type": "password"
+    },
+    {
+      "key": "confirmPassword",
+      "type": "password",
+      "validationMessage":{
+        "confirmPasswordMessage": "Password and confirm password must be the same!"
+      }
+    },
+    {
+      "type": "submit",
+      "title": "Register"
+    }
+  ],
+
+  "model": {
+  }
+}

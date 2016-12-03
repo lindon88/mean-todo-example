@@ -1,0 +1,21 @@
+<div class="wrap-content">
+    <div class="wrap-tasks">
+        <div class="add-new">
+            <form
+                    autocomplete="off"
+                    id="{{ctrlTodo.formId}}"
+                    name="{{ctrlTodo.formId}}"
+                    sf-schema="ctrlTodo.schema"
+                    sf-form="ctrlTodo.form"
+                    sf-model="ctrlTodo.model"
+                    ng-submit="ctrlTodo.onSubmit(todoForm)">
+            </form>
+        </div>
+        <div class="all-tasks">
+            <div ng-repeat="item in ctrlTodo.groupedItems track by $index" class="task-list">
+                <div todo-group options="item"></div>
+            </div>
+        </div>
+    </div>
+
+</div>

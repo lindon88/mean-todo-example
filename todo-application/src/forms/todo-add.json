@@ -1,0 +1,74 @@
+{
+  "schema": {
+    "type": "object",
+    "properties": {
+      "title":  {
+        "title": "title",
+        "type": "string"
+      },
+      "created": {
+        "title": "dateSelect",
+        "type": "string"
+      },
+      "priority":  {
+        "title": "priority",
+        "type": "object"
+      }
+    }
+  },
+
+  "form": [
+    {
+      "key": "title",
+      "notitle": true,
+      "type": "textarea"
+    },
+    {
+      "type": "section",
+      "htmlClass": "actions",
+      "items": [
+        {
+          "key": "created",
+          "type": "data-time-picker",
+          "kendoOptions": {
+            "start": "month",
+            "depth": "month",
+            "format": "yyyy-MM-dd HH:mm",
+            "timeFormat": "HH:mm"
+          }
+        },
+        {
+          "key": "priority",
+          "type": "combo-box",
+          "kendoOptions":{
+            "dataTextField": "name",
+            "dataValueField": "id",
+            "dataSource": [
+              {
+                "id": "1",
+                "name": "High"
+              },{
+                "id": "2",
+                "name": "Medium"
+              },{
+                "id": "3",
+                "name": "Low"
+              }
+            ]
+          }
+        },
+        {
+          "type": "action-button",
+          "title": "Save",
+          "htmlClass": "right"
+        }
+      ]
+    }
+  ],
+
+  "model": {
+    "id": "",
+    "title": "",
+    "created": ""
+  }
+}

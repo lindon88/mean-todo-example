@@ -1,0 +1,43 @@
+.sidebar{
+    background: #f5f5f5;
+    .wrap-sidebar{
+        padding: 25px;
+    }
+    .filters{
+        form{
+            display: block;
+        }
+        position: relative;
+        h3.title{
+            font-size: 13px;
+            color: #000;
+            font-weight: 400;
+            margin-bottom: 25px;
+        }
+        .reset{
+            position: absolute;
+            right: -5px;
+            top: 0;
+            font-size: 13px;
+            color: #848484;
+            background: transparent;
+        }
+        .checkbox{
+            padding-left: 20px;
+            margin-bottom: 20px;
+            vertical-align: middle;
+            input{
+                margin-right: 5px;
+                height: 30px;
+                &:active, &:focus{
+                    outline:0px !important;
+                }
+            }
+            > *{
+                display: inline-block;
+                line-height: 30px;
+                vertical-align: middle;
+            }
+        }
+    }
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title ng-bind="title"></title>
+
+    <!-- include: "type": "css", "files": "<%= appCss %>" -->
+    <!-- /include -->
+
+</head>
+<body>
+
+<!-- bower:js -->
+<!-- endbower -->
+
+<!-- include: "type": "js", "files": "<%= concat.angularApp.src %>" -->
+<!-- /include -->
+
+<div id="main" ui-view autoscroll="false" class="main-wrapper"></div>
+
+</body>
+</html>

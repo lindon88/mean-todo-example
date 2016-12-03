@@ -1,0 +1,50 @@
+<div class="header">
+    <div class="wrap-header">
+        <div class="left">
+            <div class="icon">
+                <i ui-sref="todo" class="fa fa-tasks" aria-hidden="true"></i>
+            </div>
+            <h1 class="title">
+                TO-DO LIST
+            </h1>
+        </div>
+        <div class="right">
+            <div class="search">
+                <form>
+                    <input ng-change="ctrlLayout.onSearch()" ng-model="ctrlLayout.searchText" type="text" name="search" placeholder="Search...">
+                </form>
+            </div>
+            <div ng-click="ctrlLayout.signOut()" class="username">
+                <span>{{ctrlLayout.userName}}</span>
+                <i title="sign out" class="fa fa-sign-out" aria-hidden="true"></i>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="sidebar">
+    <div class="wrap-sidebar">
+        <div class="filters">
+            <form>
+                <h3 class="title">Filters</h3>
+                <button ng-click="ctrlLayout.resetFilters()" type="reset" class="reset">Reset filters</button>
+                <div class="checkbox">
+                    <input ng-change="ctrlLayout.applyFilters()" ng-model="ctrlLayout.filters.complete" type="checkbox" name="completed" value="completed" id="completed"><label for="completed"> Completed</label>
+                </div>
+
+                <div class="checkbox">
+                    <input ng-change="ctrlLayout.applyFilters()" ng-model="ctrlLayout.filters.high" type="checkbox" name="high" value="high" id="high"><label for="high"> <span class="circle high"></span> High</label>
+                </div>
+
+                <div class="checkbox">
+                    <input ng-change="ctrlLayout.applyFilters()" ng-model="ctrlLayout.filters.medium" type="checkbox" name="medium" value="medium" id="medium"><label for="medium"> <span class="circle medium"></span> Medium</label>
+                </div>
+
+                <div class="checkbox">
+                    <input ng-change="ctrlLayout.applyFilters()" ng-model="ctrlLayout.filters.low" type="checkbox" name="low" value="low" id="low"><label for="low"> <span class="circle low"></span> Low</label>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>
+<div ui-view="content" class="content"></div>

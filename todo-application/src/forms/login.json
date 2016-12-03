@@ -1,0 +1,42 @@
+{
+  "schema": {
+    "type": "object",
+    "title": "Comment",
+    "properties": {
+      "userName":  {
+        "title": "User name:",
+        "type": "string"
+      },
+      "password":  {
+        "title": "Password:",
+        "type": "string"
+      },
+      "actionLink":{
+        "title": "Register",
+        "type": "string"
+      }
+    },
+    "required": ["userName","password"]
+  },
+
+  "form": [
+    "userName",
+    {
+      "key": "password",
+      "type": "password"
+    },
+    {
+      "key": "actionLink",
+      "type": "action-link",
+      "title": "Register"
+    },
+    {
+      "type": "submit",
+      "title": "Login"
+    }
+  ],
+
+  "model": {
+    "actionLink": "register"
+  }
+}

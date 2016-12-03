@@ -1,0 +1,26 @@
+[
+  "bower_components/kendo-ui/js/kendo.angular.min.js",
+  "src/js/app/app.js",
+  "dist/js/templates.js",
+
+  "src/js/app/components/**/*.module.js",
+  "src/js/app/components/**/*.service.js",
+  "src/js/app/components/**/*.directive.js",
+  "src/js/app/components/**/*.config.js",
+  "src/js/app/components/**/*.filter.js",
+  "src/js/app/components/**/*.controller.js",
+
+  "src/js/app/core/**/*.module.js",
+  "src/js/app/core/**/*.service.js",
+  "src/js/app/core/**/*.directive.js",
+  "src/js/app/core/**/*.config.js",
+  "src/js/app/core/**/*.filter.js",
+  "src/js/app/core/**/*.controller.js",
+
+  "src/js/app/form-engine/**/*.module.js",
+  "src/js/app/form-engine/**/*.service.js",
+  "src/js/app/form-engine/**/*.directive.js",
+  "src/js/app/form-engine/**/*.config.js",
+  "src/js/app/form-engine/**/*.filter.js",
+  "src/js/app/form-engine/**/*.controller.js"
+]

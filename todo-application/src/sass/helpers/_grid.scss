@@ -1,0 +1,46 @@
+﻿// Main wrapper
+.wrapper {
+  width: $width;
+  margin: 0 auto;
+  padding: 0 $gutter;
+  @include breakpoint(laptop) {
+    width: 970px;
+  }
+  @include breakpoint(tablet) {
+    width: 750px;
+  }
+  @include breakpoint(phablet) {
+    width: 100%;
+  }
+}
+
+// Row 
+.row {
+  margin: 0 (-$gutter);
+  @extend .clearfix;
+  > * {
+    float: left;
+    padding: 0 $gutter;
+    position: relative;
+  }
+}
+
+
+// Grid
+@for $i from 1 through $grid-columns {
+  .col-#{$i} { 
+    width: 100% / $grid-columns * $i;
+    @include breakpoint(phablet) {
+      width: 100%;
+    }
+  }
+  .col-offset-#{$i} { 
+    margin-left: 100% / $grid-columns * $i;
+  }
+  .col-pull-#{$i} { 
+    right: 100% / $grid-columns * $i;
+  }
+  .col-push-#{$i} { 
+    left: 100% / $grid-columns * $i;
+  }
+}
