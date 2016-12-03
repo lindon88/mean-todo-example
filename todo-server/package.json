@@ -1,0 +1,23 @@
+{
+  "name": "todo-server",
+  "version": "1.0.0",
+  "description": "Todo server",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm install && node index.js"
+  },
+  "author": "Lidnon Camaj",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.1",
+    "express": "^4.13.4",
+    "jsonfile": "^2.3.0",
+    "jsonwebtoken": "^7.1.9",
+    "md5": "^2.2.1",
+    "mongodb": "^2.2.11",
+    "mongodb-migrations": "^0.6.2",
+    "node-uuid": "^1.4.7",
+    "promise": "^7.1.1",
+    "underscore": "^1.8.3"
+  }
+}

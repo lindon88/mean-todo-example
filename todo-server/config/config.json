@@ -1,0 +1,12 @@
+{
+  "app": {
+    "port": "6634",
+    "allowCrossDomain": "http://localhost:3000",
+    "secretKey": "dee9f11f-62be-423c-8819-27420f5388c3"
+  },
+  "database": {
+    "host": "localhost",
+    "port": "27017",
+    "dbName": "test"
+  }
+}
