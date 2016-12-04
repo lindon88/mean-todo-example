@@ -4,7 +4,7 @@
   "description": "Todo server",
   "main": "index.js",
   "scripts": {
-    "start": "npm install && node index.js"
+    "start": "npm install && mm migrate && node index.js"
   },
   "author": "Lidnon Camaj",
   "license": "ISC",
