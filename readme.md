@@ -1,4 +1,4 @@
-# MEAN (MongoDB, Express, Angular.js and Node.js) Todo exmaple
+# MEAN (MongoDB, Express, Angular.js and Node.js) Todo example
 
 > MEAN is a collection of JavaScript-based technologies — MongoDB, Express.js, AngularJS, and Node.js — used to develop web applications. From the client and server sides to databases, MEAN is a full-stack development toolkit
 
