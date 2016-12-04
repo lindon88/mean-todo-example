@@ -5,7 +5,7 @@ IF %ERRORLEVEL% NEQ 0 (
 	echo Node JS is not installed, install Node JS first manually
 	goto END
 ) ELSE (
-	echo Node JS is installed
+	echo Node JS is installed 
 )
 
 call npm start
