@@ -4,7 +4,16 @@
 
 **Table of Contents** 
 
-[TOC]
+ - [Applications](#application)
+	 - [Server application](#server-application)
+	 - [Client application](#client-application)
+ - [Requirements](#requirements)
+ - [Install](#install)
+	 - [Node.js](#nodejs) 
+	 - [MongoDB](#mongodb)
+	 - [Grunt CLI](#grunt-cli)
+	 - [MongoDB migrations](#mongodb-migrations)
+ - [Run](#run)
 
 #Applications
 In this example we have two applications **todo-server** and **todo-application**
@@ -108,3 +117,5 @@ To run applications **todo-server** and **todo-application** in CMD run this com
  - will migrate **MongoDB** migration files and will start **todo-server**, **express** application
  - will install **bower** components for **todo-application**
  - will run **grunt** tasks for **todo-application** and will start **browser sync**
+
+
