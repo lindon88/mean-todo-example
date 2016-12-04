@@ -3,10 +3,12 @@
 > MEAN is a collection of JavaScript-based technologies — MongoDB, Express.js, AngularJS, and Node.js — used to develop web applications. From the client and server sides to databases, MEAN is a full-stack development toolkit
 
 **Table of Contents** 
-[Applications](#applications)
+
+[TOC]
 
 #Applications
 In this example we have two applications **todo-server** and **todo-application**
+
 ## Server application
 Server application is developed in **Node.js** for development are used these technologies:
 
@@ -94,3 +96,15 @@ Official web site: https://github.com/emirotin/mongodb-migrations
 
 If **npm** is installed then run this command
 > npm install mongodb-migrations -g
+
+# Run
+To run applications **todo-server** and **todo-application** in CMD run this command
+> run.bat
+
+**run.bat**  will do next:
+
+ - will check if all required applications are installed
+ - will install **Node.js** modules for **todo-server** and **todo-application** applications
+ - will migrate **MongoDB** migration files and will start **todo-server**, **express** application
+ - will install **bower** components for **todo-application**
+ - will run **grunt** tasks for **todo-application** and will start **browser sync**
